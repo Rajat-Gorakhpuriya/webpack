@@ -1,8 +1,10 @@
 import style from "./index.css"; // style is only name we can use any name.
-import "./clearButton";
-
+import logo from "./assets/webpack-image.png";
 
 const btn = document.getElementById("button1");
+const logoEl = document.getElementById("logo");
+logoEl.src = logo;
+
 btn.classList.add([style.button]);
 btn.addEventListener("click",()=> {
     const el = document.getElementById("header");
